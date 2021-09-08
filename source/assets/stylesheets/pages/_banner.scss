@@ -1,0 +1,19 @@
+h2{
+  text-align: center;
+}
+a{
+  color: brown;
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+.fullscreen{
+  text-align: center;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -50px;
+}

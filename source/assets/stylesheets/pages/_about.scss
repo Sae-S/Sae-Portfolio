@@ -1,0 +1,33 @@
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.image1 {
+  position: relative;
+
+}
+.image2 {
+  position: absolute;
+  bottom: -60px;
+  right: -8px;
+  width: 70%;
+}
+
+.flex-container{
+  display:flex;
+}
+
+.about-text{
+  display: flex;
+  align-items: center;
+}
+
+
+.img-square{
+  width: 320px;
+  height: 320px;
+  margin-right: 24px;
+  border-radius: 3%;
+}

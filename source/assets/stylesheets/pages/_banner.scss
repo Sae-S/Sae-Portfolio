@@ -2,10 +2,13 @@ h2{
   text-align: center;
   font-size: 60px;
 }
-a{
+.main-container a{
   color: brown;
+  background-color: #fff1e6;
   &:hover{
-    text-decoration: none;
+    text-decoration: line-through;
+    color: brown;
+    background-color: #fff1e6;
   }
 }
 
@@ -17,4 +20,5 @@ a{
   flex-direction: column;
   justify-content: center;
   margin-top: -50px;
+  background-color: #fff1e6;
 }

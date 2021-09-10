@@ -18,11 +18,15 @@
 .flex-container{
   display:flex;
   margin-top: 32px;
+  padding: 42px 0;
 }
 
 .about-text{
   display: flex;
   align-items: center;
+  font-size: 16px;
+  line-height: 32px;
+  padding: 8px;
 }
 
 

@@ -1,8 +1,8 @@
 .main-container h1{
   color: white;
   font-size: 120px;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 0 32px;
+
 }
 
 .main-container h2{
@@ -24,11 +24,11 @@
 .fullscreen{
   text-align: center;
   align-items: center;
-  height: 100vh;
+  height: calc(100vh - 80px);
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
   justify-content: center;
-  margin-top: -50px;
+  // padding-top: 16px;
   background-color: $beige;
 }
 

@@ -1,11 +1,13 @@
 .main-container h1{
   color: white;
-  font-size: 76px;
+  font-size: 120px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .main-container h2{
   text-align: center;
-  font-size: 48px;
+  font-size: 32px;
   color: $blue;
 }
 
@@ -30,6 +32,13 @@
   background-color: $beige;
 }
 
+#animate{
+  color: white;
+  font-size: 120px;
+  padding-top: 0px;
+
+}
+
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
   .container {
@@ -39,7 +48,10 @@
     font-size: 72px;
   }
   .main-container h2{
-    font-size: 44px;
+    font-size: 24px;
+  }
+  #animate{
+    font-size: 72px;
   }
 }
 @media (max-width: 720px) {
@@ -51,7 +63,10 @@
     font-size: 56px;
   }
   .main-container h2{
-    font-size: 36px;
+    font-size: 24px;
+  }
+  #animate{
+    font-size: 56px;
   }
 }
 @media (max-width: 540px) {
@@ -64,5 +79,8 @@
   }
   .main-container h2{
     font-size: 24px;
+  }
+  #animate{
+    font-size: 56px;
   }
 }

@@ -1,5 +1,17 @@
 import 'bootstrap';
 
+// Typed text on banner
+import Typed from 'typed.js';
+
+if (document.getElementById("animate")) {
+  new Typed('#animate', {
+    strings: ['That Can Code', 'That Can Code'],
+    typeSpeed: 50,
+    loop: true
+  });
+}
+
+
 // Add smooth scrolling to # anchors
 $(document).ready(function () {
   // Add smooth scrolling to all links

@@ -1,65 +1,32 @@
-<div class="page">
+<div class="page" id="projects">
   <h1>WEB APP PROJECTS</h1>
-  <!-- tabs -->
-  <div class="pcss3t pcss3t-effect-scale pcss3t-theme-1">
-    <input type="radio" name="pcss3t" checked  id="tab1"class="tab-content-first">
-    <label for="tab1">renRAKU</label>
-    <input type="radio" name="pcss3t" id="tab2" class="tab-content-2">
-    <label for="tab2">Doppelganger Finder</label>
-    <input type="radio" name="pcss3t" id="tab3" class="tab-content-3">
-    <label for="tab3">Watch-List</label>
-    <%# <input type="radio" name="pcss3t" id="tab5" class="tab-content-last">
-    <label for="tab5">Newton</label> %>
-    <ul>
-      <li class="tab-content tab-content-first typography">
-        <h1>renRAKU - Communicate More, Do Less</h1>
-        <p>Role: Project Manager and Back End</p>
-        <p>renRAKU replaces 連絡帳(Renrakuchou), paper note books that teachers in Japan use to communicate with parents. It allows writing daily notes to parents/teachers, uploading of schedules, creation of school/class events, posting grades for individual students, and scheduling of parent/teacher meetings.</p>
-        <div id="carousel">
-          <div class="slide">
-            <%= image_tag '2-1.png', style: "width:100%" %>
-          </div>
-          <div class="slide">
-            <%= image_tag '2-2.png', style: "width:100%" %>
-          </div>
-          <div class="slide">
-            <%= image_tag '2-3.png', style: "width:100%" %>
-          </div>
-          <div class="slide">
-            <%= image_tag '2-4.png', style: "width:100%" %>
-          </div>
-          <div class="slide">
-            <%= image_tag '2-5.png', style: "width:100%" %>
-          </div>
-          <div class="slide">
-            <%= image_tag '2-6.png', style: "width:100%" %>
-          </div>
-        </div>
-        <p class="text-right"><em><a href="https://github.com/teslazonda/renRAKU" target="_blank">CODE</a></em></p>
-        <p class="text-right"><em><a href="https://www.renrakuchou.com/" target="_blank">WEBSITE</a></em></p>
-      </li>
-      <li class="tab-content tab-content-2 typography">
-        <h1>Doppelganger Finder - AirBnB Clone</h1>
-        <p>Role: Project Manager and Back End</p>
-        <p>An Airbnb clone for renting celebrity look-a-likes</p>
-        <p class="text-right"><em><a href="https://github.com/teslazonda/Doppelganger-Finder" target="_blank">CODE</a></em></p>
-        <p class="text-right"><em><a href="https://doppelganger-finder.herokuapp.com/" target="_blank">WEBSITE</a></em></p>
-      </li>
-      <li class="tab-content tab-content-3 typography">
-        <h1>Movies Watch-List</h1>
-        <p>Role: Full-Stack</p>
-        <p>You can organize your favorite movies in genre lists, add ratings, and add comments.</p>
-        <p class="text-right"><em><a href="https://github.com/Sae-S/rails-watch-list" target="_blank">CODE</a></em></p>
-        <p class="text-right"><em><a href="https://movie-watch-list-sae.herokuapp.com/" target="_blank">WEBSITE</a></em></p>
-        <%# <li class="tab-content tab-content-last typography">
-        <div class="typography">
-          <h1>Isaac Newton</h1>
-          <p>English physicist and mathematician who is widely regarded as one of the most influential scientists of all time and as a key figure in the scientific revolution. His book Philosophiæ Naturalis Principia Mathematica ("Mathematical Principles of Natural Philosophy"), first published in 1687, laid the foundations for most of classical mechanics. Newton also made seminal contributions to optics and shares credit with Gottfried Leibniz for the invention of the infinitesimal calculus.</p>
-          <p>Newton's Principia formulated the laws of motion and universal gravitation that dominated scientists' view of the physical universe for the next three centuries. It also demonstrated that the motion of objects on the Earth and that of celestial bodies could be described by the same principles. By deriving Kepler's laws of planetary motion from his mathematical description of gravity, Newton removed the last doubts about the validity of the heliocentric model of the cosmos.</p>
-          <p class="text-right"><em>Find out more about Isaac Newton from <a href="http://en.wikipedia.org/wiki/Isaac_Newton" target="_blank">Wikipedia</a>.</em></p>
-        </div>
-      </li> %>
-      </ul>
+  <%# Project 1 %>
+  <ul class="project-container">
+    <h1>renRAKU</h1>
+    <h2>Role: Project Manager</h2>
+    <p>renRAKU replaces 連絡帳(Renrakuchou), paper note books that teachers in Japan use to communicate with parents. It allows writing daily notes to parents/teachers, uploading of schedules, creation of school/class events, posting grades for individual students, and scheduling of parent/teacher meetings.</p>
+    <div class="carousel-container">
+      <div class="sliding-background">
+        <%= image_tag '2-1.png', style: "height:400px" %><%= image_tag '2-2.png', style: "height:400px" %><%= image_tag '2-3.png', style: "height:400px" %><%= image_tag '2-4.png', style: "height:400px" %><%= image_tag '2-5.png', style: "height:400px" %><%= image_tag '2-6.png', style: "height:400px" %>
+      </div>
     </div>
-    <!--/ tabs -->
-  </div>
+    <a href="https://github.com/teslazonda/renRAKU" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.renrakuchou.com/" target="_blank"><i class="fas fa-laptop"></i></a>
+  </ul>
+  <%# Project 2 %>
+  <ul class="project-container">
+    <h1>Doppelganger Finder - AirBnB Clone</h1>
+    <p>Role: Project Manager and Back End</p>
+    <p>An Airbnb clone for renting celebrity look-a-likes</p>
+    <p class="text-right"><em><a href="https://github.com/teslazonda/Doppelganger-Finder" target="_blank">CODE</a></em></p>
+    <p class="text-right"><em><a href="https://doppelganger-finder.herokuapp.com/" target="_blank">WEBSITE</a></em></p>
+  </ul>
+  <%# Project 3 %>
+  <ul class="project-container">
+    <h1>Movies Watch-List</h1>
+    <p>Role: Full-Stack</p>
+    <p>You can organize your favorite movies in genre lists, add ratings, and add comments.</p>
+    <p class="text-right"><em><a href="https://github.com/Sae-S/rails-watch-list" target="_blank">CODE</a></em></p>
+    <p class="text-right"><em><a href="https://movie-watch-list-sae.herokuapp.com/" target="_blank">WEBSITE</a></em></p>
+  </ul>
+</div>

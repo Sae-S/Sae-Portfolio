@@ -20,6 +20,10 @@
   }
 }
 
+.main-container ul li{
+  list-style: none;
+}
+
 .fullscreen{
   text-align: center;
   align-items: center;
@@ -35,7 +39,6 @@
   color: white;
   font-size: 120px;
   padding-top: 0px;
-
 }
 
 @media (max-width: 960px) {

@@ -1,7 +1,23 @@
 <div class="fullscreen">
   <div class="main-container" id="banner">
-    <h1>A Bilingual <a href="https://saeshikiji.myportfolio.com/work" target=_blank>Graphic Designer</a></h1>
-    <h1><span id="animate"></span></h1>
-    <h2>Honolulu, Hawaii   ---   Tokyo, Japan</h2>
+    <ul>
+      <li>
+        <h1>A Bilingual <a href="https://saeshikiji.myportfolio.com/work" target=_blank>Graphic Designer</a></h1>
+      </li>
+      <li>
+        <h1><span id="animate"></span></h1>
+      </li>
+      <li>
+        <h2>Honolulu, Hawaii   ---   Tokyo, Japan</h2>
+      </li>
+      <div class="cursor"></div>
+    </ul>
   </div>
+  <script>
+    const cursor = document.querySelector('.cursor');
+    document.addEventListener('mousemove', (e) => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+    })
+  </script>
 </div>

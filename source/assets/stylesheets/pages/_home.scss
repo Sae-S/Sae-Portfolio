@@ -1,1 +1,15 @@
 // Specific CSS for your home-page
+.cursor{
+  position: fixed;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: $blue;
+  transition: 0.1s;
+  transform: translate(-50%,-50%);
+  pointer-events:none;
+  mix-blend-mode: difference;
+}
+ul li:hover ~ .cursor{
+  transform: scale(4);
+}

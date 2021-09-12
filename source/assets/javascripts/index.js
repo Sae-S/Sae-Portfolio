@@ -1,10 +1,9 @@
 import 'bootstrap';
 import $ from 'jquery';
-
-// Typed text on banner
 import Typed from 'typed.js';
 
-if (document.getElementById("animate")) {
+if (document.getElementById('animate')) {
+  // eslint-disable-next-line no-new
   new Typed('#animate', {
     strings: ['That Can Code!', 'That Can Code!'],
     typeSpeed: 80,
@@ -12,52 +11,20 @@ if (document.getElementById("animate")) {
   });
 }
 
-
 // Add smooth scrolling to # anchors
-$(document).ready(function () {
-  // Add smooth scrolling to all links
-  $(".smooth").on('click', function (event) {
+$(document).ready(() => {
+  $('.smooth').on('click', function (event) {
     // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
+    if (this.hash !== '') {
       event.preventDefault();
       // Store hash
-      var hash = this.hash;
+      const { hash } = this;
       // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 800, function () {
-        // Add hash (#) to URL when done scrolling (default click behavior)
+      }, 800, () => {
         window.location.hash = hash;
       });
-    } // End if
+    }
   });
 });
-
-// Carousel
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-window.plusSlides = plusSlides;
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-window.currentSlide = currentSlide;
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-
-  if (n > slides.length) { slideIndex = 1 }
-  if (n < 1) { slideIndex = slides.length }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slides[slideIndex - 1].style.display = "block";
-}

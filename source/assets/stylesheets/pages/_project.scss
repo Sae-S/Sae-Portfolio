@@ -6,6 +6,8 @@
 }
 
 .project-container{
+  text-align: center;
+  align-items: center;
   padding: 8px;
   h1{
     margin: 16px 32px;
@@ -24,9 +26,32 @@
     background-color: transparent;
     font-size: 32px;
     margin: 16px;
+    &:hover{
+      color: $orange;
+    }
   }
 }
 
 .role-text{
   margin: 0;
+}
+
+.col a{
+  font-size: 24px;
+}
+
+@media (max-width: 960px) {
+  .col a{
+    font-size: 20px;
+  }
+}
+@media (max-width: 720px) {
+  .col a{
+    font-size: 20px;
+  }
+}
+@media (max-width: 540px) {
+  .col a{
+    font-size: 20px;
+  }
 }

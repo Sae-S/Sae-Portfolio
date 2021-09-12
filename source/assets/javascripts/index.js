@@ -6,7 +6,7 @@ import Typed from 'typed.js';
 
 if (document.getElementById("animate")) {
   new Typed('#animate', {
-    strings: ['That Can Code!!', 'That Can Code!!'],
+    strings: ['That Can Code!', 'That Can Code!'],
     typeSpeed: 80,
     loop: true
   });

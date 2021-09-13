@@ -5,7 +5,7 @@ import Typed from 'typed.js';
 if (document.getElementById('animate')) {
   // eslint-disable-next-line no-new
   new Typed('#animate', {
-    strings: ['That Can Code!', 'That Can Code!'],
+    strings: ['and Frontend Developer!', 'and Backend Developer!'],
     typeSpeed: 80,
     loop: true
   });

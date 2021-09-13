@@ -12,11 +12,12 @@
 
 .main-container a{
   color: $orange;
-  background-color: $beige;
   &:hover{
-    text-decoration: line-through;
-    color: $orange;
-    background-color: $beige;
+    color: white;
+    background-color: $orange;
+    padding: 8px;
+    text-decoration: none;
+    transition: all 0.5s 0s ease-in;
   }
 }
 
